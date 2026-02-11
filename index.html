@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orçamentos - Di Domenico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topo">
+    <div class="logo-area">
+      <h1>Orçamentos</h1>
+      <p class="sub">Selecione os procedimentos e gere o orçamento.</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="acoes">
+      <button id="btnLimpar">Limpar seleção</button>
+      <button id="btnPdf">Gerar PDF</button>
+    </div>
+
+    <section id="listaProcedimentos" class="lista"></section>
+
+    <section class="resumo">
+      <h2>Resumo</h2>
+      <div class="linha">
+        <span>Total selecionado:</span>
+        <strong id="total">R$ 0,00</strong>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Di Domenico - Sistema de Orçamentos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
