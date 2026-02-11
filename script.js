@@ -1,137 +1,386 @@
+
 const secoes = [
   {
     titulo: "Taxas e anestesias",
     itens: [
       ["Taxa de Sala", 550],
-      ["Taxa de Curativo", 150],
-      ["Taxa de Anestesia", 700],
-      ["Taxa de Anestesia (Sedação)", 1500],
+      ["Consulta", 880],
+      ["Carbox (sessão/região)", 715],
+      ["Analgesia Inalatória", 600],
+      ["Equipe de Analgesia (1h)", 2480],
+      ["Equipe de Analgesia (2h)", 2760],
+      ["Analgesia Inalatória – Óxido Nitroso", 600],
     ]
   },
+
   {
-    titulo: "Procedimentos",
+    titulo: "Cirúrgicos / Dermatológicos",
     itens: [
-      ["Blefaroplastia superior", 8500],
-      ["Blefaroplastia inferior", 9500],
-      ["Otoplastia", 8500],
-      ["Rinoplastia", 18000],
-      ["Lipo de Papada", 6500],
-      ["Lipoaspiração", 16000],
-      ["Abdominoplastia", 19000],
-      ["Mamoplastia", 18000],
-      ["Prótese de mama", 20000],
+      ["Hialuronidase", 1800],
+      ["Exérese de Lesão de Pele", 1900],
+      ["Curetagem", 1500],
+      ["Subcisão", 3300],
     ]
   },
+
   {
-    titulo: "Harmonização",
+    titulo: "Fios de tração e PDO",
     itens: [
-      ["Toxina botulínica (Botox)", 1300],
-      ["Preenchimento facial", 1800],
-      ["Bioestimulador", 2200],
-      ["Fios de PDO", 2500],
+      ["Fios PDO Eye Bag (2 pacotes)", 2900],
+      ["Fios PDO Eye Bag (1 pacote)", 1450],
+      ["Fios PDO Pescoço", 3575],
+      ["Fios Filler", 2200],
+      ["Fios de Tração (4 fios)", 4500],
+      ["Fios de Tração (6 fios)", 5335],
+      ["Fios de Tração (8 fios)", 6600],
+      ["Fios Aptos (caixa)", 11000],
     ]
   },
+
+  {
+    titulo: "MD Codes e Injetáveis",
+    itens: [
+      ["MD Codes 1", 2100],
+      ["MD Codes 2", 4000],
+      ["MD Codes 3", 5900],
+      ["MD Codes 4", 8360],
+      ["MD Codes 5", 9900],
+      ["MD Codes 6", 11770],
+      ["MD Codes 7 ou + (cada)", 1936],
+      ["Preenchimento labial", 2100],
+      ["Produto / RETOQUE", 1400],
+    ]
+  },
+
+  {
+    titulo: "Procedimentos Injetáveis Avançados",
+    itens: [
+      ["Profhilo", 3200],
+      ["Preenchimento labial", 2100],
+      ["Produto / RETOQUE", 1400],
+      ["Rinomodelação", 2650],
+      ["Skinvive / Skinbooster", 2100],
+      ["MESO CORPORAL", 820],
+    ]
+  },
+
+  {
+    titulo: "Bioestimuladores",
+    itens: [
+      ["HarmonyCa", 3000],
+      ["Radiesse Duo", 3000],
+      ["Radiesse Duo (2 seringas)", 5830],
+      ["Radiesse Duo (3 seringas)", 8690],
+      ["Radiesse Plus", 3000],
+      ["Radiesse Plus (2 seringas)", 6000],
+      ["Radiesse Ultra", 5300],
+      ["Radiesse Prime Blend Face", 4000],
+      ["Sculptra (1 frasco)", 3150],
+      ["Sculptra (2 frascos)", 5900],
+    ]
+  },
+
+  {
+    titulo: "Toxina Botulínica",
+    itens: [
+      ["Full Face Feminino", 2080],
+      ["Full Face Masculino", 2310],
+      ["Face + Masseter (F)", 2520],
+      ["Face + Masseter (M)", 2630],
+      ["Olhos (F)", 940],
+      ["Olhos (M)", 990],
+      ["Glabela", 1360],
+      ["Glabela + Testa", 1680],
+      ["Glabela + Olhos", 1580],
+      ["Axila", 2730],
+      ["Pescoço / Nefertiti", 1940],
+      ["Masseter / Bruxismo", 1370],
+      ["Buço", 950],
+      ["Mãos", 2620],
+      ["Rosácea", 1160],
+    ]
+  },
+
+  {
+    titulo: "ATRIA 2",
+    itens: [
+      ["Face", 5720],
+      ["Papada / Pescoço / Colo", 3630],
+      ["Face + Pescoço", 6600],
+      ["Face + Pescoço + Papada", 7260],
+      ["Pálpebra", 2860],
+      ["Peitoral Masc / Braços", 4235],
+      ["Bananinha / Coxas / Culotes / Costas / Flancos", 4235],
+      ["Meia Coxa", 3000],
+      ["Joelho – Flacidez", 2420],
+      ["Joelho – Gordura", 3190],
+      ["Infraxilar – frente", 2420],
+      ["Infraxilar – frente e atrás", 3520],
+      ["Abdômen 1 – Flacidez", 4300],
+      ["Abdômen 2 – Gordura", 4500],
+    ]
+  },
+
+  {
+    titulo: "MORPHEUS",
+    itens: [
+      ["Face + Pescoço", 7590],
+      ["Face / Lateral de Coxa / Flancos / Abdômen / Costas", 7150],
+      ["Braço / Infraxilar / Bananinha / Joelho / Pescoço ou Papada", 4950],
+      ["Adicional + 1 região", 2750],
+      ["2ª sessão (até 3 meses-ESTERELIZAR PONTEIRA)", 4400],
+    ]
+  },
+
+  {
+    titulo: "MORPHEUS + ATRIA",
+    itens: [
+      ["Região", 8800],
+      ["Adicional + 1 região", 2200],
+    ]
+  },
+
+  {
+    titulo: "ULTRAFORMER MPT",
+    itens: [
+      ["Face / Lateral Coxa / Flancos / Costas", 6710],
+      ["Abdômen / Bananinha / Braços", 5110],
+      ["Papada e/ou Pescoço / Colo", 3630],
+      ["Joelho / Infraxilar", 3790],
+      ["Pálpebra", 2750],
+      ["Face + Papada + Pescoço", 7700],
+    ]
+  },
+
+  {
+    titulo: "VOLNEWMER",
+    itens: [
+      ["Face", 11100],
+      ["Pescoço", 5170],
+      ["Olhos 1", 3300],
+      ["Olhos 2", 3740],
+      ["Terço Médio 1 - apenas bochechas (200 disparos)", 3960],
+      ["Terço Médio – Pálpebras + Lateral Olhos", 4290],
+      ["Testa", 1980],
+      ["Código de Barras – (40) Jovem", 2090],
+      ["Código de Barras – (150) Maduro", 3300],
+      ["Terço Inferior – Contorno", 6600],
+      ["Terço Inferior – Lateral Boca", 4950],
+      ["Gordura Pescoço", 2200],
+      ["Joelho – Flacidez", 7150],
+      ["Abdômen / Braços – Flacidez", 5900],
+    ]
+  },
+
+  {
+    titulo: "VOLFORMER",
+    itens: [
+      ["Face + Pescoço", 19800],
+      ["Face", 15400],
+      ["Olhos", 4950],
+      ["Pescoço", 7700],
+    ]
+  },
+
+  {
+    titulo: "FOTONA STARWALKER",
+    itens: [
+      ["Vasos / Acne / Código de Barras / Tatuagem / Cicatriz / Rosácea / Melanoses / Olheiras", 3200],
+      ["Estrias", 3500],
+      ["Clareamento Corporal (Axilas e Virilhas)", 3300],
+      ["Melasma / Rejuvenescimento Facial + Exossomos", 4290],
+      ["Manchas das Mãos", 2300],
+      ["Rejuvenescimento Face + Pescoço", 4950],
+      ["Rejuvenescimento Pescoço + Colo", 4400],
+      ["Rejuvenescimento Face + Pescoço + Colo", 5500],
+    ]
+  },
+
+  {
+    titulo: "ELETRODERME",
+    itens: [
+      ["FACE", 2750],
+      ["+ PDRN", 3300],
+      ["+ Exossomos", 3850],
+    ]
+  },
+
+  {
+    titulo: "LASER CO2 FRACIONADO",
+    itens: [
+      ["Face / Colo / Pescoço", 3000],
+      ["Face + Pescoço", 3150],
+      ["Face + Pescoço + Colo", 4070],
+      ["Face + Pescoço + Colo + Mãos", 3900],
+      ["Mãos", 2090],
+      ["Estrias / Cicatriz – Grande Quantidade", 2200],
+      ["Estrias / Cicatriz – Pequena Quantidade", 1850],
+    ]
+  },
+
+  {
+    titulo: "LASER INTIMO",
+    itens: [
+      ["1 sessão", 2090],
+      ["2 sessões", 3630],
+    ]
+  },
+
+  {
+    titulo: "POWER SHAPE",
+    itens: [
+      ["Corporal (5 sessões)", 2850],
+      ["Unidade / Região", 650],
+    ]
+  },
+
+  {
+    titulo: "SOLON",
+    itens: [
+      ["LIP – Face / Colo / Pescoço", 2300],
+      ["LIP – Face + Colo", 2640],
+      ["Laser NDYAG – Face Vasos", 1650],
+      ["NDYAG (1 vasinho)", 820],
+      ["Laser Pixel – Face", 3080],
+      ["Laser Pixel – Colo", 2530],
+      ["Laser Pixel – Face + Colo", 3630],
+      ["Laser Pixel – Costas", 2640],
+      ["Laser Pixel – Mãos", 2090],
+    ]
+  },
+
+  {
+    titulo: "PROTOCOLOS",
+    itens: [
+      ["Beautiful Mommy", 7480],
+      ["Glow Up", 4850],
+      ["Praia Brava Plus", 17600],
+      ["Praia Brava 1 Harmonização com Hialuronico e Bioestimulador Radiesse", 11550],
+      ["Praia Brava 2 Harmonização + Power Shape", 14300],
+      ["Praia Brava 3 Harmonização + Atria", 16000],
+      ["PREENCHIMENTO DE GLÚTEO Ácido Hialuronico", 14850],
+      ["Bye Bye", 7150],
+      ["Body Sculpt", 7150],
+      ["V Lift", 11680],
+      ["Olhar Intenso- Atria + Fios PDO + Eletroderme/Laser", 6820],
+      ["Ultra Olhos- Volnewmer + Atria + Eletroderme + Exossomos", 11580],
+      ["Ultra Neck- Volnewmer + Profhilo", 7150],
+      ["Melasma Recovery", 8800],
+      ["PROTOCOLO LIPODEMA 2 Power shape + Morpheus", 9350],
+      ["PROTOCOLO LIPODEMA 1 Power shape + Atria", 5040],
+      ["SOFT LIFT Botox + Preenchedor", 5470],
+      ["LIFT UP Radiesse Plus + Duo", 5820],
+      ["HD ABDOMEN Atria + Radiesse 1", 6820],
+      ["Atria + Radiesse 2", 9400],
+      ["BoosterBotox", 2980],
+      ["PROTOCOLO 40+ - 4 Radiesse", 11400],
+    ]
+  },
+
   {
     titulo: "PROTOCOLOS CAPILARES",
     itens: [
       ["Toxina capilar", 1890],
-      ["MMP - sessão", 770],
+      ["MMP- sessão", 770],
       ["MMP CAPILAR + EXOSSOMOS", 1200],
       ["Eletroderme Capilar", 1750],
     ]
   }
 ];
 
-const listaProcedimentos = document.getElementById("listaProcedimentos");
-const totalSpan = document.getElementById("total");
-const btnLimpar = document.getElementById("btnLimpar");
-const btnPdf = document.getElementById("btnPdf");
+const secaoProcedimentos = document.getElementById("procedimentos");
+const selecionadosDiv = document.getElementById("selecionados");
+
+const totalEl = document.getElementById("total");
+const avistaEl = document.getElementById("avista");
+const economiaEl = document.getElementById("economia");
+const parceladoEl = document.getElementById("parcelado");
+
+const btnPDF = document.getElementById("btnPDF");
+const btnApresentacao = document.getElementById("btnApresentacao");
 
 let selecionados = [];
 
-function formatarMoeda(valor) {
+function formatar(valor) {
   return valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
 }
 
-function atualizarTotal() {
+function atualizarResumo() {
   const total = selecionados.reduce((acc, item) => acc + item.valor, 0);
-  totalSpan.textContent = formatarMoeda(total);
+  const avista = total * 0.9;
+  const economia = total - avista;
+
+  totalEl.textContent = formatar(total);
+  avistaEl.textContent = formatar(avista);
+  economiaEl.textContent = formatar(economia);
+
+  if (total > 0) {
+    parceladoEl.textContent = `10x de ${formatar(total / 10)}`;
+  } else {
+    parceladoEl.textContent = "-";
+  }
+
+  selecionadosDiv.innerHTML = "";
+  selecionados.forEach(item => {
+    const div = document.createElement("div");
+    div.textContent = `${item.nome} - ${formatar(item.valor)}`;
+    selecionadosDiv.appendChild(div);
+  });
 }
 
-function renderizar() {
-  listaProcedimentos.innerHTML = "";
+function renderizarProcedimentos() {
+  secaoProcedimentos.innerHTML = "";
 
-  secoes.forEach((secao, secaoIndex) => {
-    const divSecao = document.createElement("div");
-    divSecao.classList.add("secao");
+  procedimentos.forEach((secao, secaoIndex) => {
+    const details = document.createElement("details");
+    details.open = true;
 
-    const titulo = document.createElement("h2");
-    titulo.textContent = secao.titulo;
-    divSecao.appendChild(titulo);
+    const summary = document.createElement("summary");
+    summary.textContent = secao.titulo;
+    details.appendChild(summary);
 
-    secao.itens.forEach((item, itemIndex) => {
-      const nome = item[0];
-      const valor = item[1];
-
-      const divItem = document.createElement("div");
-      divItem.classList.add("item");
-
+    secao.itens.forEach((proc, procIndex) => {
       const label = document.createElement("label");
+
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
 
       checkbox.addEventListener("change", (e) => {
         if (e.target.checked) {
-          selecionados.push({ nome, valor });
+          selecionados.push(proc);
         } else {
-          selecionados = selecionados.filter(x => x.nome !== nome);
+          selecionados = selecionados.filter(p => p.nome !== proc.nome);
         }
-        atualizarTotal();
+        atualizarResumo();
       });
 
       label.appendChild(checkbox);
-      label.appendChild(document.createTextNode(" " + nome));
+      label.appendChild(document.createTextNode(` ${proc.nome} - ${formatar(proc.valor)}`));
 
-      const spanValor = document.createElement("span");
-      spanValor.classList.add("valor");
-      spanValor.textContent = formatarMoeda(valor);
-
-      divItem.appendChild(label);
-      divItem.appendChild(spanValor);
-
-      divSecao.appendChild(divItem);
+      details.appendChild(label);
     });
 
-    listaProcedimentos.appendChild(divSecao);
+    secaoProcedimentos.appendChild(details);
   });
 }
 
-btnLimpar.addEventListener("click", () => {
-  selecionados = [];
-  renderizar();
-  atualizarTotal();
+btnApresentacao.addEventListener("click", () => {
+  document.body.classList.toggle("apresentacao");
 });
 
-btnPdf.addEventListener("click", () => {
-  if (selecionados.length === 0) {
-    alert("Selecione pelo menos um procedimento.");
-    return;
-  }
+btnPDF.addEventListener("click", () => {
+  const elemento = document.querySelector(".container");
 
-  let texto = "ORÇAMENTO - DI DOMENICO\n\n";
-  selecionados.forEach(item => {
-    texto += `${item.nome} - ${formatarMoeda(item.valor)}\n`;
-  });
+  const opt = {
+    margin: 0.3,
+    filename: "orcamento-di-domenico.pdf",
+    image: { type: "jpeg", quality: 0.98 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "in", format: "a4", orientation: "portrait" }
+  };
 
-  const total = selecionados.reduce((acc, item) => acc + item.valor, 0);
-  texto += `\nTOTAL: ${formatarMoeda(total)}\n`;
-
-  const blob = new Blob([texto], { type: "text/plain" });
-  const link = document.createElement("a");
-  link.href = URL.createObjectURL(blob);
-  link.download = "orcamento.txt";
-  link.click();
+  html2pdf().set(opt).from(elemento).save();
 });
 
-renderizar();
-atualizarTotal();
+renderizarProcedimentos();
+atualizarResumo();
